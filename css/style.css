@@ -1,16 +1,14 @@
 
 :root{
-	--bg-color:#190321;;
+	--bg-color:#3e3f46;
 	--white-color:#ffffff;
-	--span-color: #ffd700;
-	--border:#163665;
+	--span-color: #15d9ee;
+	--border:#2964bc;
 	--dark:#000000;
 	--gray:#4f6078;
 
 }
-/*==========02) Variable Section End==========*/
 
-/*==========03) Global Section Start==========*/
 body{
  background-color:var(--bg-color);
 }
@@ -68,9 +66,7 @@ svg{
 .sec:hover{
 	color: var(--white-color) !important;
 }
-/*==========03) Global Section End==========*/
 
-/*==========04) Header Section Start==========*/
 #header .nav{
 	background-color: var(--bg-color) !important;
 }
@@ -98,23 +94,6 @@ svg{
 #header {
     background-color: var(--dark) !important;
 
-}
-
-/*==========04) Header Section End==========*/
-
-/*==========05) Hero Section Start==========*/
-
-/*==========05) Hero Section End==========*/
-
-
-
-/*==========07) Template Section Start==========*/
-#template{
-	background: url(../img/headphone.png)no-repeat;
-	background-size: 45% 100%;
-	min-height: 430px;
-	width: 100%;
-	overflow: hidden;
 }
 
 
@@ -153,4 +132,3 @@ svg{
 .footer .copyright p{
 	color: var(--span-color);
 }
-/*==========12) Footer Section End==========*/
