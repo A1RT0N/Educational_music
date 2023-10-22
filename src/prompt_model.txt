@@ -1,0 +1,374 @@
+---
+
+### Example 1
+
+#### Input:
+
+```
+Theme: Colors of the Rainbow
+Key Words: Red, Orange, Yellow, Green, Blue, Indigo, Violet
+Exact number of Lines: 12
+```
+
+#### Output:
+
+```
+Red is the first, don't forget Orange
+Yellow comes next, Green's the door hinge
+Blue in the sky, Indigo's fine
+Violet's last, now you're divine
+
+Red like a rose, Orange like the sun
+Yellow's a daisy, Green's so much fun
+Blue like the sea, Indigo's rare
+Violet's a flower, colors to wear
+
+Red's for love, Orange for zest
+Yellow's for joy, Green is the best
+Blue's for calm, Indigo's deep
+Violet's for dreams, in your sleep
+```
+
+---
+
+### Example 2
+
+#### Input:
+
+```
+Theme: Days of the Week
+Key Words: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
+Exact number of Lines: 12
+```
+
+#### Output:
+
+```
+Monday's a drag, but Tuesday's alright
+Wednesday's the hump, Thursday's in sight
+Friday's the best, Saturday's cool
+Sunday's for rest, that's the rule
+
+Monday for work, Tuesday's the same
+Wednesday we break, Thursday's no game
+Friday we cheer, Saturday's free
+Sunday we rest, that's how it be
+
+Monday's a start, Tuesday we cruise
+Wednesday's the heart, Thursday we choose
+Friday's a party, Saturday's a gem
+Sunday we recharge, then it starts again
+```
+
+---
+
+### Example 3
+
+#### Input:
+
+```
+Theme: Seasons
+Key Words: Spring, Summer, Autumn, Winter
+Exact number of Lines: 12
+```
+
+#### Output:
+
+```
+Spring is fresh, Summer's hot
+Autumn leaves, Winter's got
+Snow and ice, Spring's a breeze
+Summer nights, Autumn trees
+
+Spring for love, Summer for fun
+Autumn's gold, Winter's done
+Spring's a bloom, Summer's a beach
+Autumn's a room, Winter's a reach
+
+Spring's a start, Summer's a ride
+Autumn's an art, Winter's a slide
+Spring's a chance, Summer's a thrill
+Autumn's a dance, Winter's a chill
+```
+
+---
+
+### Example 4
+
+#### Input:
+
+```
+Theme: Continents
+Key Words: Africa, Antarctica, Asia, Europe, North America, South America, Australia
+Exact number of Lines: 12
+```
+
+#### Output:
+
+```
+Africa's wild, Antarctica's cold
+Asia's vast, Europe's old
+North America's free, South's a dance
+Australia's down under, give it a chance
+
+Africa's a drum, Antarctica's ice
+Asia's a sum, Europe's precise
+North America's bold, South's a flame
+Australia's gold, each has a name
+
+Africa's heat, Antarctica's chill
+Asia's a feat, Europe's a hill
+North America's dream, South's a song
+Australia's a team, where we all belong
+```
+
+---
+
+### Example 5
+
+#### Input:
+
+```
+Theme: Elements
+Key Words: Hydrogen, Helium, Lithium, Beryllium, Boron, Carbon, Nitrogen
+Exact number of Lines: 12
+```
+
+#### Output:
+
+```
+Hydrogen's first, Helium's next
+Lithium bursts, Beryllium's flexed
+Boron's the fifth, Carbon's alive
+Nitrogen's swift, now we arrive
+
+Hydrogen's light, Helium's rare
+Lithium's might, Beryllium's fair
+Boron's unique, Carbon's a star
+Nitrogen's sleek, elements are
+
+Hydrogen's one, Helium's two
+Lithium's fun, Beryllium's new
+Boron's a mix, Carbon's a key
+Nitrogen's six, now you can see
+```
+
+---
+
+### Example 6
+
+#### Input:
+
+```
+Theme: Planets (Dwarf Included)
+Key Words: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto
+Exact number of Lines: 12
+```
+
+#### Output:
+
+```
+Mercury's quick, Venus is bright
+Earth is our home, Mars is light
+Jupiter's big, Saturn's got rings
+Uranus tilts, Neptune's the king
+Pluto's small, but still in the game
+
+Mercury's hot, Venus has clouds
+Earth's just right, Mars draws crowds
+Jupiter's a giant, Saturn's a jewel
+Uranus is distant, Neptune's cool
+Pluto's a dwarf, but still has fame
+
+Mercury's first, Venus is second
+Earth's our thirst, Mars is beckoned
+Jupiter's fifth, Saturn's sixth in line
+Uranus is seventh, Neptune's fine
+Pluto's last, but not a shame
+```
+---
+
+### Example 7
+
+#### Input:
+
+```
+Theme: Musical Instruments
+Key Words: Piano, Violin, Guitar, Flute, Drums, Trumpet, Saxophone
+Exact number of Lines: 12
+```
+
+#### Output:
+
+```
+Piano's keys, Violin's strings
+Guitar's a breeze, Flute's the wings
+Drums are the beat, Trumpet's the horn
+Saxophone's sweet, music's reborn
+
+Piano's grand, Violin's fine
+Guitar's in hand, Flute's a sign
+Drums are loud, Trumpet's clear
+Saxophone's proud, music's near
+
+Piano's black, Violin's brown
+Guitar's a track, Flute's a crown
+Drums are a set, Trumpet's gold
+Saxophone's a bet, music's bold
+```
+
+---
+
+### Example 8
+
+#### Input:
+
+```
+Theme: Greek Gods
+Key Words: Zeus, Hera, Poseidon, Demeter, Ares, Athena, Apollo
+Exact number of Lines: 12
+```
+
+#### Output:
+
+```
+Zeus is the king, Hera's his queen
+Poseidon's the sea, Demeter's green
+Ares for war, Athena's wise
+Apollo's a star, gods in the skies
+
+Zeus with a bolt, Hera's the throne
+Poseidon's a jolt, Demeter's grown
+Ares is fierce, Athena's a shield
+Apollo's a pierce, gods of the field
+
+Zeus is a storm, Hera's a vow
+Poseidon's the norm, Demeter's the plow
+Ares is a fight, Athena's a plan
+Apollo's the light, gods of the clan
+```
+
+---
+
+### Example 9
+
+#### Input:
+
+```
+Theme: Types of Trees
+Key Words: Oak, Pine, Maple, Birch, Cedar, Willow, Redwood
+Exact number of Lines: 12
+```
+
+#### Output:
+
+```
+Oak is strong, Pine's a cone
+Maple's long, Birch is lone
+Cedar's a scent, Willow's a grace
+Redwood's a giant, trees have a place
+
+Oak's a wood, Pine's a needle
+Maple's good, Birch is feeble
+Cedar's a chest, Willow's a weep
+Redwood's the best, trees are deep
+
+Oak's a leaf, Pine's a sap
+Maple's a sheaf, Birch is a tap
+Cedar's a chip, Willow's a bend
+Redwood's a trip, trees are a friend
+```
+---
+
+### Example 10
+
+#### Input:
+
+```
+Theme: Zodiac Signs
+Key Words: Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra
+Exact number of Lines: 12
+```
+
+#### Output:
+
+```
+Aries is fire, Taurus is ground
+Gemini's a flyer, Cancer's round
+Leo's a lion, Virgo's a maid
+Libra's a scion, zodiac's displayed
+
+Aries is first, Taurus is next
+Gemini's a burst, Cancer's complex
+Leo's a roar, Virgo's a plan
+Libra's a door, zodiac's a span
+
+Aries is bold, Taurus is strong
+Gemini's gold, Cancer's a song
+Leo's a king, Virgo's a guide
+Libra's a wing, zodiac's a ride
+```
+
+---
+
+### Example 11
+
+#### Input:
+
+```
+Theme: Basic Math Operations
+Key Words: Addition, Subtraction, Multiplication, Division
+Exact number of Lines: 12
+```
+
+#### Output:
+
+```
+Addition's a sum, Subtraction's a loss
+Multiplication's a drum, Division's a cross
+Addition's a plus, Subtraction's a minus
+Multiplication's a fuss, Division's a sign, thus
+
+Addition's more, Subtraction's less
+Multiplication's a score, Division's a guess
+Addition's an increase, Subtraction's a cut
+Multiplication's a piece, Division's a rut
+
+Addition's a gain, Subtraction's a take
+Multiplication's a chain, Division's a break
+Addition's a join, Subtraction's a part
+Multiplication's a coin, Division's an art
+```
+
+---
+
+### Example 12
+
+#### Input:
+
+```
+Theme: Weather Conditions
+Key Words: Sunny, Cloudy, Rainy, Snowy, Windy, Stormy, Foggy
+Exact number of Lines: 12
+```
+
+#### Output:
+
+```
+Sunny's a day, Cloudy's a veil
+Rainy's a play, Snowy's a trail
+Windy's a gust, Stormy's a clash
+Foggy's a must, weather's a flash
+
+Sunny's a glow, Cloudy's a shade
+Rainy's a show, Snowy's a glade
+Windy's a sweep, Stormy's a roar
+Foggy's a creep, weather's a door
+
+Sunny's a cheer, Cloudy's a mood
+Rainy's a tear, Snowy's a brood
+Windy's a flight, Stormy's a fray
+Foggy's a sight, weather's a way
+```
+
+---
