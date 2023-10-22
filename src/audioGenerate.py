@@ -4,7 +4,7 @@ import elevenlabs
 import os
 def generate_voice(text):
 
-    elevenlabs.set_api_key("2ea493ac23d40e0c936fce64d0b313c5")
+    elevenlabs.set_api_key("") # Necessário key do elevenlabs
     
     audio = generate(
         text=text,
