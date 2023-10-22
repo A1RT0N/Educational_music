@@ -1,26 +1,42 @@
 import cohere
-import streamlit as st
+import re
 
-co = cohere.Client("3lmg86xuofLDUK9UFR5mbvLNGwlVRHNw2IMjHeQm")
+from audioGenerate import gerar_audio
 
-st.title("Your mnemonic")
+def com_cohere(tema, keywords):
 
-title = st.text_input("Enter an industry:", "")
-#keywords = st.text_input("Enter an industry:", "")
+    co = cohere.Client('OWzO9oX34BUHppFyLOhIDRDaI4CLAEB7RBnztzHe')
 
+    caminho = 'prompt_model.txt'
+          
+    # Lê arquivo de texto padrão
+    with open(caminho, 'r') as file:
+        prompt = file.read()
 
-creativity_options = ["Eminem", "Soon..."]
-selected_creativity = st.selectbox("Select:", creativity_options)
+    # Crie uma entrada com a formatação correta, incluindo as palavras-chave
+    keywords_str = ", ".join(keywords)  # Converte a lista de palavras-chave em uma string
+    entrada = f"""Input:
 
-if selected_creativity == "Eminem":
-    artista = "Eminem"
-elif selected_creativity == "Soon...":
-    artista = Eminem
-else:
-    artista = Eminem
+    Theme: {tema}
+    Key Words: {keywords_str}
+    Exact number of Lines: 12
 
-if st.button("Generate Idea"):
-    st.subheader("Generated Mnmonic:")
+    What is the expected output?
+    """
 
-    st.write("Tema: ", title)
-    st.write("Artista: ", artista)
+    prompt = prompt + entrada
+
+    response = co.generate(
+        prompt=prompt,  # Use a entrada formatada, não a string literal
+    )
+
+    # Use uma expressão regular para encontrar o texto entre os marcadores "```"
+    match = re.search(r'```(.*?)```', response[0], re.DOTALL)
+
+    lyrics = match.group(1)  # Obtém o conteúdo entre os marcadores "```"
+
+    gerar_audio(lyrics.strip())
+
+    print(lyrics.strip())
+
+com_cohere("c++ language", ["vector", "string", "object", "int"])
