@@ -5,7 +5,7 @@ from src.audioGenerate import gerar_audio
 
 def com_cohere(tema, keywords):
 
-    co = cohere.Client('3lmg86xuofLDUK9UFR5mbvLNGwlVRHNw2IMjHeQm')
+    co = cohere.Client('')
 
     caminho = './src/prompt_model.txt'
           
