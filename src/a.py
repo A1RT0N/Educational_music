@@ -1,13 +1,13 @@
 import cohere
 import re
 
-from audioGenerate import gerar_audio
+from src.audioGenerate import gerar_audio
 
 def com_cohere(tema, keywords):
 
-    co = cohere.Client('OWzO9oX34BUHppFyLOhIDRDaI4CLAEB7RBnztzHe')
+    co = cohere.Client('3lmg86xuofLDUK9UFR5mbvLNGwlVRHNw2IMjHeQm')
 
-    caminho = 'prompt_model.txt'
+    caminho = './src/prompt_model.txt'
           
     # Lê arquivo de texto padrão
     with open(caminho, 'r') as file:
@@ -37,6 +37,4 @@ def com_cohere(tema, keywords):
 
     gerar_audio(lyrics.strip())
 
-    print(lyrics.strip())
-
-com_cohere("c++ language", ["vector", "string", "object", "int"])
+    return (lyrics.strip())

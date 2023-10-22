@@ -1,10 +1,12 @@
 import cohere
+from src.a import com_cohere
 import streamlit as st
 from pydub import AudioSegment
+import numpy as np
 
 co = cohere.Client("3lmg86xuofLDUK9UFR5mbvLNGwlVRHNw2IMjHeQm")
 
-st.title("Your mnemonic")
+st.title("Your Mnemonic 📚")
 
 title = st.text_input("Theme:", key="theme1")
 keywords = st.text_input("Keywords:", key="theme2")
@@ -26,15 +28,20 @@ if st.button("Generate Mnemonic"):
         col1, col2, col3 = st.columns(3)
 
         with col1:
-            st.write("*Tema*:", title)
+            st.write("**Theme**:", title)
 
         with col2:
-            st.write("*Keywords*:", keywords)
+            st.write("**Keywords**:", keywords)
+        with col3:
+            st.write("**Artist**:", artista)
 
-        st.write("*Artista*:", artista)
+        letter = com_cohere(title, keywords)
+        
+        st.write("**Lyrics**:\n")
+        
+        st.write(letter)
+        
+        audio_file = open('output_audio.mp3', 'rb')
+        audio_bytes = audio_file.read()
 
-        audio_file_path = 'seu_audio.mp3'
-
-        # Carregue o arquivo de áudio e reproduza automaticamente
-        audio = AudioSegment.from_file(audio_file_path)
-        play(audio)
+        st.audio(audio_bytes, format='audio/mp3')
