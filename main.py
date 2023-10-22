@@ -4,7 +4,7 @@ import streamlit as st
 from pydub import AudioSegment
 import numpy as np
 
-co = cohere.Client("3lmg86xuofLDUK9UFR5mbvLNGwlVRHNw2IMjHeQm")
+co = cohere.Client("")
 
 st.title("Your Mnemonic 📚")
 
