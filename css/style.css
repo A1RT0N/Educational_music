@@ -1,0 +1,156 @@
+
+:root{
+	--bg-color:#250333;;
+	--white-color:#ffffff;
+	--span-color: #ffd700;
+	--border:#163665;
+	--dark:#000000;
+	--gray:#4f6078;
+
+}
+/*==========02) Variable Section End==========*/
+
+/*==========03) Global Section Start==========*/
+body{
+ background-color:var(--bg-color);
+}
+section{
+	padding: 90px 0;
+}
+h1{
+	font-size: 45px;
+	font-family: 'Open Sans', sans-serif;
+}
+h2{
+	font-size: 40px;
+	font-family: 'Open Sans', sans-serif;
+}
+h4{
+	font-family: 'Open Sans', sans-serif;
+	color: var(--white-color);
+	line-height: normal;
+	font-size: 18px;
+}
+span{
+	color: var(--span-color);
+}
+p{
+	font-size: 14px;
+	line-height: 2;
+	color: var(--span-color);
+}
+.btn{
+	border: 2px solid var(--border);
+	color: var(--white) !important;
+	padding: 15px 30px;
+	border-radius: 30px;
+	margin-top: 30px;
+	font-family: 'Open Sans', sans-serif;
+}
+.btn:hover{
+	background: var(--primary-color);
+	outline: none;
+	box-shadow: none;
+	color: var(--white);
+}
+svg{
+	color: var(--primary-color);
+	font-size: 35px !important;
+}
+.nav_fixed {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    opacity: 1 !important;
+}
+.sec{
+	color: var(--dark) !important;
+}
+.sec:hover{
+	color: var(--white-color) !important;
+}
+/*==========03) Global Section End==========*/
+
+/*==========04) Header Section Start==========*/
+#header .nav{
+	background-color: var(--bg-color) !important;
+}
+#header .navbar-brand img{
+	filter: brightness(0) invert(1);
+	width: 65%;
+}
+#header .navbar-dark .navbar-toggler{
+	border: none;
+	outline: none;
+}
+#header .navbar-toggler span{
+	font-size: 25px;
+}
+#header .nav-item a{
+	font-family:'Open Sans', sans-serif;
+	text-transform: uppercase;
+	color:var(--white-color);
+}
+
+#header .navbar-nav .nav-link {
+    color: var(--white-color);
+}
+
+#header {
+    background-color: var(--dark) !important;
+
+}
+
+/*==========04) Header Section End==========*/
+
+/*==========05) Hero Section Start==========*/
+
+/*==========05) Hero Section End==========*/
+
+
+
+/*==========07) Template Section Start==========*/
+#template{
+	background: url(../img/headphone.png)no-repeat;
+	background-size: 45% 100%;
+	min-height: 430px;
+	width: 100%;
+	overflow: hidden;
+}
+
+
+
+
+#contact, .footer{
+	background:var(--dark);
+}
+#contact .contact-heading{
+		width: 60%;
+		text-align: center;
+		margin: 0 auto;
+		padding-bottom: 45px;
+}
+/*==========12) Footer Section Start==========*/
+.footer .container{
+		border-top: 1px solid var(--gray);
+		border-color: var(--span-color);
+		padding-top: 10px;
+}
+.footer ul{
+	padding-left: 0;
+}
+.footer ul li{
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 5px;
+}
+.footer ul li:hover a{
+	text-decoration: none;
+	color: var(--primary-color);
+}
+.footer ul li a{
+	color: var(--span-color);
+}
+.footer .copyright p{
+	color: var(--span-color);
+}
+/*==========12) Footer Section End==========*/
